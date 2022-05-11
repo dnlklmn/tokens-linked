@@ -4,6 +4,7 @@ import "./variables/variables.css";
 interface ButtonProps {
   title: string;
   secondary?: boolean;
+  onClick?: any;
 }
 
 export const StyledButton = styled.button`
@@ -18,6 +19,9 @@ export const StyledButton = styled.button`
   line-height: var(--button-medium-line-height);
   font-size: var(--button-medium-font-size);
   letter-spacing: var(--button-medium-letter-spacing);
+  display: inline-block;
+  flex-grow: 0;
+  align-self: flex-end;
 
   &:hover {
     background-color: var(--button-base-primary-hover);
@@ -31,9 +35,9 @@ export const StyledButton = styled.button`
   }
 `;
 
-export const Button = ({ title, secondary }: ButtonProps) => {
+export const Button = ({ title, secondary, onClick }: ButtonProps) => {
   return (
-    <StyledButton className={secondary ? "secondary" : ""}>
+    <StyledButton className={secondary ? "secondary" : ""} onClick={onClick}>
       {title}
     </StyledButton>
   );
