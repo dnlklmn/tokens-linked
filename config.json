@@ -1,0 +1,27 @@
+{
+  "source": ["./polkadot-transformed.json"],
+  "platforms": {
+    "scss": {
+      "transformGroup": "scss",
+      "files": [
+        {
+          "destination": "src/variables/variables.scss",
+          "format": "scss/variables",
+          "className": "StyleDictionary",
+          "filter": {}
+        }
+      ]
+    },
+    "css": {
+      "transformGroup": "css",
+      "files": [
+        {
+          "format": "css/variables",
+          "destination": "src/variables/variables.css",
+          "className": "StyleDictionary",
+          "filter": {}
+        }
+      ]
+    }
+  }
+}
