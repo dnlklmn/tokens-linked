@@ -8,6 +8,6 @@ or
 4. npm start
 
 ### To do
-Import tokens json instead of copy-paste
-Figure out shadows, border radii, and token naming
-Automate transform & build
+- Import tokens json instead of copy-paste
+- Figure out shadows, border radii, and token naming
+- Automate transform & build
