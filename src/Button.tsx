@@ -9,16 +9,16 @@ interface ButtonProps {
 
 export const StyledButton = styled.button`
   all: unset;
-  padding: var(--button-padding-default-top-bottom)
-    var(--button-padding-default-left-right);
+  padding: var(--button-padding-medium-top-bottom)
+    var(--button-padding-medium-left-right);
   background-color: var(--button-base-primary);
-  border-radius: var(--border-radius-full);
+  border-radius: var(--button-border-radius-medium);
   cursor: pointer;
-  font-family: var(--button-medium-font-family);
-  font-weight: var(--button-medium-font-weight);
-  line-height: var(--button-medium-line-height);
-  font-size: var(--button-medium-font-size);
-  letter-spacing: var(--button-medium-letter-spacing);
+  font-family: var(--button-label-medium-font-family);
+  font-weight: var(--button-label-medium-font-weight);
+  line-height: var(--button-label-medium-line-height);
+  font-size: var(--button-label-medium-font-size);
+  letter-spacing: var(--button-label-medium-letter-spacing);
   display: inline-block;
   flex-grow: 0;
   align-self: flex-end;

@@ -9,19 +9,18 @@ interface TypeProps {
 export const StyledType = styled.span`
   all: unset;
   color: var(--text-default);
-  font-family: var(--button-medium-font-family);
-  font-weight: var(--button-medium-font-weight);
-  line-height: var(--button-medium-line-height);
-  font-size: var(--button-medium-font-size);
-  letter-spacing: var(--button-medium-letter-spacing);
+  font-family: var(--button-label-medium-font-family);
+  font-weight: var(--button-label-medium-font-weight);
+  line-height: var(--button-label-medium-line-height);
+  font-size: var(--button-labbel-medium-font-size);
+  letter-spacing: var(--button-label-medium-letter-spacing);
   display: block;
-  text-align: left;
 
-  &.body {
-    font-size: var(--body1-font-size);
+  &.body1 {
+    font-size: var(--body-1-font-size);
   }
   &.h5 {
-    font-size: var(--h5-font-size);
+    font-size: var(--heading-5-font-size);
     font-weight: Bold;
   }
 `;
