@@ -29,7 +29,7 @@ function App() {
             </Type>
           </Flex>
           <Flex alignEnd>
-            <Button title="Decline" />
+            <Button variant="secondary" title="Decline" />
             <Button title="Accept" />
           </Flex>
         </Card>

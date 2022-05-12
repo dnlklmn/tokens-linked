@@ -3,7 +3,7 @@ import "./variables/variables.css";
 
 interface ButtonProps {
   title: string;
-  secondary?: boolean;
+  variant?: string;
   onClick?: any;
 }
 
@@ -28,16 +28,24 @@ export const StyledButton = styled.button`
   }
 
   &.secondary {
+    border-offset: -6px;
+    background-color: white;
+    color: var(--button-foreground-primary-inverts);
+    box-shadow: inset 0 0 0 var(--button-border-width-medium)
+      var(--button-border-primary);
+  }
+
+  &.sensitive {
     background-color: var(--button-base-secondary);
   }
-  &.secondary:hover {
+  &.sensitive:hover {
     background-color: var(--button-base-secondary-hover);
   }
 `;
 
-export const Button = ({ title, secondary, onClick }: ButtonProps) => {
+export const Button = ({ title, variant, onClick }: ButtonProps) => {
   return (
-    <StyledButton className={secondary ? "secondary" : ""} onClick={onClick}>
+    <StyledButton className={variant} onClick={onClick}>
       {title}
     </StyledButton>
   );
