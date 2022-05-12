@@ -21,8 +21,8 @@ function App() {
         </style>
         <Card>
           <Flex column gap="small">
-            <Type type="h5">Lorem ipsum dolor sit amet</Type>
-            <Type type="body1">
+            <Type textStyle="h5">Lorem ipsum dolor sit amet</Type>
+            <Type textStyle="body1">
               Morbi lorem lectus, semper vel commodo scelerisque, mattis sit
               amet justo. Donec euismod quam nec nisi efficitur aliquam.
               Suspendisse consectetur at sapien eget sodales.

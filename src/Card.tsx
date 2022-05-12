@@ -3,11 +3,11 @@ import "./variables/variables.css";
 
 interface CardProps {
   children: any;
+  gap?: "small" | "medium";
 }
 
 export const StyledCard = styled.div`
   all: unset;
-  height: 240px;
   width: 360px;
   padding: var(--content-card-padding-default-all);
   background-color: var(--bg-default);
