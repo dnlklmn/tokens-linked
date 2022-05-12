@@ -42,6 +42,11 @@
       "last 1 safari version"
     ]
   },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
   "devDependencies": {
     "@types/styled-components": "^5.1.25"
   }

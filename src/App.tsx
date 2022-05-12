@@ -5,6 +5,12 @@ import Card from "./Card";
 import Flex from "./Flex";
 import Type from "./Type";
 
+fetch("https://raw.githubusercontent.com/dnlklmn/ds-tokens/main/polkadot.json")
+  .then((res) => res.json())
+  .then((json) => {
+    console.log(json);
+  });
+
 function App() {
   return (
     <div className="App">
