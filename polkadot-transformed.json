@@ -334,19 +334,19 @@
         "value": "#CC006C",
         "type": "color"
       },
-      "light": {
+      "secondary-hover": {
         "value": "#ffe4f3",
         "type": "color"
       },
-      "secondary": {
+      "sensitive": {
         "value": "#8F00FF",
         "type": "color"
       },
-      "secondary-hover": {
+      "sensitive-hover": {
         "value": "#7200CC",
         "type": "color"
       },
-      "secondary-pressed": {
+      "sensitive-pressed": {
         "value": "#580099",
         "type": "color"
       },
@@ -370,7 +370,7 @@
         "value": "#D1D1DB",
         "type": "color"
       },
-      "tertiary-pressed": {
+      "secondary-pressed": {
         "value": "#F7A1CF",
         "type": "color"
       }
@@ -1358,15 +1358,15 @@
   },
   "button-borderWidth": {
     "medium": {
-      "value": 2,
+      "value": "2px",
       "type": "borderWidth"
     },
     "small": {
-      "value": 1,
+      "value": "1px",
       "type": "borderWidth"
     },
     "large": {
-      "value": 2,
+      "value": "2px",
       "type": "borderWidth"
     }
   },
@@ -1676,11 +1676,11 @@
   },
   "borderWidth": {
     "1": {
-      "value": 1,
+      "value": "1px",
       "type": "borderWidth"
     },
     "2": {
-      "value": 2,
+      "value": "2px",
       "type": "borderWidth"
     }
   },
