@@ -1,6 +1,6 @@
 ### Setup
 **On [ds-tokens](https://github.com/dnlklmn/ds-tokens):**
-1. polkadot.json tokens exported from figma -> transformed by this [token transformer](https://github.com/six7/figma-tokens/tree/main/token-transformer) to be usable by style dictionary, export light or dark mode here: 
+1. polkadot.json tokens exported from figma -> transformed by [token transformer](https://github.com/six7/figma-tokens/tree/main/token-transformer) to be usable by style dictionary, export light or dark mode like this: 
 - `$ token-transformer polkadot.json polkadot-transformed.json global,space,typography,light  --expandTypography`
 or
 - `$ token-transformer polkadot.json polkadot-transformed.json global,space,typography,dark  --expandTypography`
