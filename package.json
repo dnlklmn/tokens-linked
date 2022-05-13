@@ -49,6 +49,7 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.25",
+    "react-docgen-typescript": "^2.2.2",
     "react-styleguidist": "^11.2.0",
     "webpack": "^5.72.1"
   }
