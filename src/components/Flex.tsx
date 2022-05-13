@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import "./variables/variables.css";
+import "../variables/variables.css";
 
 interface FlexProps {
   children: any;

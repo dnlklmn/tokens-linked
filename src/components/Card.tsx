@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import "./variables/variables.css";
+import "../variables/variables.css";
 
 interface CardProps {
   children: any;
   gap?: "small" | "medium";
 }
 
-export const StyledCard = styled.div`
+export const StyledCard = styled.div<CardProps>`
   all: unset;
   width: 360px;
   padding: var(--content-card-padding-default-all);

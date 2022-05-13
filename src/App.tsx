@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
-import Button from "./Button";
-import Card from "./Card";
-import Flex from "./Flex";
-import Type from "./Type";
+import Button from "./components/Button";
+import Card from "./components/Card";
+import Flex from "./components/Flex";
+import Type from "./components/Type";
 
 fetch("https://raw.githubusercontent.com/dnlklmn/ds-tokens/main/polkadot.json")
   .then((res) => res.json())
