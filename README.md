@@ -1,4 +1,4 @@
-[Deployed on Chromatic]([https://628601d45b3cd6004a8acfc9-apopopzrqo.chromatic.com/?path=/story/example-button--primary](https://master--628601d45b3cd6004a8acfc9.chromatic.com/?path=/story/example-button--primary)
+[Deployed on Chromatic](https://master--628601d45b3cd6004a8acfc9.chromatic.com/?path=/story/example-button--primary)
 
 ### Setup
 **On [ds-tokens](https://github.com/dnlklmn/ds-tokens):**
