@@ -1,3 +1,5 @@
+[Deployed on Chromatic](https://628601d45b3cd6004a8acfc9-apopopzrqo.chromatic.com/?path=/story/example-button--primary)
+
 ### Setup
 **On [ds-tokens](https://github.com/dnlklmn/ds-tokens):**
 1. polkadot.json tokens exported from figma -> transformed by [token transformer](https://github.com/six7/figma-tokens/tree/main/token-transformer) to be usable by style dictionary, export light or dark mode like this: 
