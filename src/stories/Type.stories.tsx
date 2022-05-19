@@ -29,6 +29,6 @@ const Template: ComponentStory<typeof Type> = (args) => (
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
-  textStyle: "h5",
+  textStyle: "body1",
   text: "Lorem ipsum!",
 };
