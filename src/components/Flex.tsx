@@ -1,12 +1,11 @@
 import styled from "styled-components";
-import "../variables/variables.css";
 
-interface FlexProps {
+type FlexProps = {
   children: any;
   column?: boolean;
   alignEnd?: boolean;
   gap?: "small" | "medium";
-}
+};
 
 export const StyledFlex = styled.div`
   all: unset;
@@ -22,7 +21,7 @@ export const StyledFlex = styled.div`
   justify-content: flex-end;
 `;
 
-export const Card = ({ column, children, alignEnd, gap }: FlexProps) => {
+export const Flex = ({ column, children, alignEnd, gap }: FlexProps) => {
   return (
     <StyledFlex column={column} alignEnd={alignEnd} gap={gap}>
       {children}
@@ -30,4 +29,4 @@ export const Card = ({ column, children, alignEnd, gap }: FlexProps) => {
   );
 };
 
-export default Card;
+export default Flex;

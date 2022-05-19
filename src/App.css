@@ -1,5 +1,3 @@
-@import "./variables/variables.css";
-
 .App-header {
   background-color: var(--bg-grey);
   min-height: 100vh;

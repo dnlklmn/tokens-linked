@@ -1,10 +1,9 @@
 import styled from "styled-components";
-import "../variables/variables.css";
 
-interface TypeProps {
+type TypeProps = {
   children: any;
   textStyle?: string;
-}
+};
 
 export const StyledType = styled.span`
   all: unset;

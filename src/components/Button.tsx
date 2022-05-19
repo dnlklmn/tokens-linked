@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import "../variables/variables.css";
 
-interface ButtonProps {
+export type ButtonProps = {
   title?: string;
-  variant?: "primary" | "secondary" | "sensitive";
+  variant?: "primary" | "secondary" | "sensitive" | "inverted";
   size?: "small" | "medium" | "large";
   onClick?: any;
-}
+  disabled?: boolean;
+};
 
 export const StyledButton = styled.button<ButtonProps>`
   all: unset;
@@ -23,7 +23,7 @@ export const StyledButton = styled.button<ButtonProps>`
   display: inline-block;
   flex-grow: 0;
   align-self: flex-end;
-
+  color: var(--button-foreground-white);
   &.small {
     padding: var(--button-padding-small-top-bottom)
       var(--button-padding-small-left-right);
@@ -52,6 +52,12 @@ export const StyledButton = styled.button<ButtonProps>`
     background-color: var(--button-base-primary-pressed);
   }
 
+  &:focus-visible {
+    background-color: var(--button-base-primary);
+    box-shadow: inset 0 0 0 var(--button-border-width-medium)
+      var(--button-border-focused);
+  }
+
   &.secondary {
     background-color: transparent;
     color: var(--button-foreground-primary-inverts);
@@ -67,6 +73,12 @@ export const StyledButton = styled.button<ButtonProps>`
     background-color: var(--button-base-secondary-pressed);
   }
 
+  &.secondary:focus-visible {
+    background-color: var(--button-base-secondary-hover);
+    box-shadow: inset 0 0 0 var(--button-border-width-medium)
+      var(--button-border-focused);
+  }
+
   &.sensitive {
     background-color: var(--button-base-secondary);
   }
@@ -77,20 +89,52 @@ export const StyledButton = styled.button<ButtonProps>`
     background-color: var(--button-base-secondary-pressed);
   }
 
-  &:focus-visible {
-    background-color: var(--button-base-primary);
+  &.inverted {
+    background-color: var(--button-base-inverted);
+    color: var(--button-foreground-primary-inverts);
+    box-shadow: 0 0.25rem 0.5rem 0 #00000010;
+  }
+
+  &.inverted:hover {
+    background-color: var(--button-base-inverted-hover);
+    box-shadow: 0 0.5rem 0.75rem 0 #00000010;
+  }
+
+  &.inverted:active {
+    background-color: var(--button-base-inverted-pressed);
+    box-shadow: 0 0.25rem 0.25rem 0 #00000010;
+  }
+
+  &.inverted:focus-visible {
+    background-color: var(--button-base-inverted-hover);
     box-shadow: inset 0 0 0 var(--button-border-width-medium)
       var(--button-border-focused);
   }
+
+  &:disabled {
+    background-color: var(--button-base-disabled);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    color: var(--button-foreground-disabled);
+    pointer-events: none;
+  }
 `;
 
-export const Button = ({ title, variant, size, onClick }: ButtonProps) => {
+export const Button = ({
+  title,
+  variant,
+  disabled,
+  size,
+  onClick,
+}: ButtonProps) => {
   return (
-    <StyledButton className={`${variant} ${size}`} onClick={onClick}>
+    <StyledButton
+      className={`${variant} ${size}`}
+      disabled={disabled}
+      onClick={onClick}
+    >
       {title}
     </StyledButton>
   );
 };
 
-/** @component */
 export default Button;

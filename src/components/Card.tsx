@@ -1,10 +1,9 @@
 import styled from "styled-components";
-import "../variables/variables.css";
 
-interface CardProps {
+type CardProps = {
   children: any;
   gap?: "small" | "medium";
-}
+};
 
 export const StyledCard = styled.div<CardProps>`
   all: unset;

@@ -5,20 +5,19 @@ import Card from "./components/Card";
 import Flex from "./components/Flex";
 import Type from "./components/Type";
 
-fetch("https://raw.githubusercontent.com/dnlklmn/ds-tokens/main/polkadot.json")
-  .then((res) => res.json())
-  .then((json) => {
-    console.log(json);
-  });
-
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <head className="App-header">
+        <link
+          rel="stylesheet"
+          href="https://dnlklmn.github.io/ds-tokens/variables.css"
+        />
         <style>
           @import
           url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
         </style>
+
         <Card>
           <Flex column gap="small">
             <Type textStyle="h5">Lorem ipsum dolor sit amet</Type>
@@ -33,7 +32,7 @@ function App() {
             <Button title="Accept" />
           </Flex>
         </Card>
-      </header>
+      </head>
     </div>
   );
 }
