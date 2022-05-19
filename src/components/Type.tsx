@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 type TypeProps = {
-  children: any;
-  textStyle?: string;
+  text?: string;
+  textStyle?: "body1" | "body2" | "h4" | "h5" | "h6";
 };
 
 export const StyledType = styled.span`
@@ -42,8 +42,8 @@ export const StyledType = styled.span`
   }
 `;
 
-export const Type = ({ children, textStyle }: TypeProps) => {
-  return <StyledType className={`${textStyle}`}>{children}</StyledType>;
+export const Type = ({ text, textStyle }: TypeProps) => {
+  return <StyledType className={`${textStyle}`}>{text}</StyledType>;
 };
 
 export default Type;

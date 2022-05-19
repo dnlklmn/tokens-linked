@@ -8,21 +8,7 @@ export default {
   title: "Example/Type",
   component: Type,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-  argTypes: {
-    title: {
-      name: "title",
-      title: { name: "string", required: false },
-      defaultValue: "Hello",
-      description: "demo description",
-      table: {
-        title: { summary: "string" },
-        defaultValue: { summary: "Hello" },
-      },
-      control: {
-        title: "text",
-      },
-    },
-  },
+  argTypes: {},
 } as ComponentMeta<typeof Type>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
@@ -44,4 +30,5 @@ export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
   textStyle: "h5",
+  text: "Lorem ipsum!",
 };

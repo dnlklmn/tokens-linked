@@ -20,12 +20,13 @@ function App() {
 
         <Card>
           <Flex column gap="small">
-            <Type textStyle="h5">Lorem ipsum dolor sit amet</Type>
-            <Type textStyle="body1">
-              Morbi lorem lectus, semper vel commodo scelerisque, mattis sit
+            <Type textStyle="h5" text="Lorem ipsum dolor sit amet" />
+            <Type
+              textStyle="body1"
+              text="Morbi lorem lectus, semper vel commodo scelerisque, mattis sit
               amet justo. Donec euismod quam nec nisi efficitur aliquam.
-              Suspendisse consectetur at sapien eget sodales.
-            </Type>
+              Suspendisse consectetur at sapien eget sodales."
+            />
           </Flex>
           <Flex alignEnd>
             <Button variant="secondary" title="Decline" />
